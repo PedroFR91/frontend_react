@@ -59,9 +59,11 @@
   .tag-cmp {
     padding: 1rem 2rem;
     border: var(--white-color);
-    border-radius: 15px;
+    border-radius: 50%;
     flex-direction: row;
+
     width: auto;
+    aspect-ratio: 1;
 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
@@ -103,7 +105,7 @@
   div {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 10px;
 
     background: var(--white-color);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -117,17 +119,35 @@
   div:nth-child(1) {
     width: 100px;
     height: 100px;
+    &:hover {
+      scale: 1.2;
+      rotate: -10deg;
+      transform: translateX(-10px);
+      box-shadow: 0 0 10px rgba(9, 199, 251, 0.6);
+    }
   }
 
   div:nth-child(2) {
     margin: 1.75rem;
     width: 150px;
     height: 150px;
+    &:hover {
+      scale: 1.2;
+      rotate: 10deg;
+      transform: translateX(20px);
+      box-shadow: 0 0 10px rgba(251, 239, 9, 0.6);
+    }
   }
 
   div:nth-child(3) {
     width: 70px;
     height: 70px;
+    &:hover {
+      scale: 1.2;
+      rotate: -10deg;
+      transform: translateX(20px);
+      box-shadow: 0 0 10px rgba(251, 170, 9, 0.6);
+    }
   }
 
   @media screen and(min-width:2000px) {
